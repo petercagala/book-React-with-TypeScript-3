@@ -1,17 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
+interface AppProps {
+    name: string;
 }
+
+interface AppState {
+    name: string;
+}
+
+class App  extends React.Component<AppProps, AppState> {
+
+    public render() {
+        return (
+            <div>
+                Hello World React
+            </div>
+        )
+    }
+};
 
 export default App;
